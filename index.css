@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+input:valid {
+    background-color: palegreen;
+}
+
+input:invalid {
+    background-color: lightpink;
+}
+
+h1 {
+    color: #f30000;
+}
+
+button {
+    font-size: 10px;
+    cursor: pointer;
+}
+
+#main_element {
+    margin: 10px;
+    height: 17px;
+    width: 600px;
+}
+
+#resultContainer {
+    opacity: 0%;
+    padding: 10px;
+    font-size: x-small;
+    display: list-item;
+    flex-direction: column;
+    text-wrap: wrap;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    border-radius: 15px;
+    background-color: black;
+    color: aquamarine;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+h6 {
+    font-size: small;
+}
