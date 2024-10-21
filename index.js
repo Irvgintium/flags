@@ -20,7 +20,7 @@ document.getElementById('main_element').addEventListener('keydown', function (ev
         clearInput();
 
         if (counter > 1) {
-            document.getElementById('indicatorTitle').innerHTML = 'These what were flags changed when compared to the last input flags:';
+            document.getElementById('indicatorTitle').innerHTML = 'These are the flags that were changed compared to the last input flags:';
             clearView();
             compareFlags();
         }
