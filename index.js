@@ -28,16 +28,6 @@ document.getElementById('main_element').addEventListener('keydown', function (ev
     }
 });
 
-F9.Chat.Wrapper.init({
-    cdn: 'prod',
-    useBusinessHours: false,
-    languages: {"enabled":false,"backgroundColor":"#65758e"},
-    l10n: {"en":{"messenger":{"customText":{}},"systemMessages":{"transferredToParticipant":"The chat has been transferred to {name}.","transferredToGroup":"That chat has been transferred to group {group}."},"captureFields":[{"k":"name","l":"Name","p":"Enter your name..."},{"k":"email","l":"Email Address","p":"Enter your email..."},{"k":"Question","l":"Question","p":"What can we help you with today?"}]}},
-    prepopulatedFields: [{"k":"campaign","v":"irvChatbot"}],
-    messenger: {"integrationId":"e65da68f-0a7e-46b2-9ac4-73bf49c21636","soundNotificationEnabled":true,"transcriptPrintingEnabled":false,"menuItems":{"imageUpload":true,"fileUpload":true,"shareLocation":true},"embedded":false,"setViewportScale":false,"browserStorage":"sessionStorage","browserLogLevel":{"info":true,"debug":true,"error":true},"hideWidgetAfterBusinessHours":false,"openLinkInSameTab":false,"scheduleCallback":{"isCallbackEnabled":false,"requestCallbackList":"","customConfirmationMessage":"We will call you as soon as we can at [PHONE]","web2CampaignAPIHost":""},"fixedHeader":false,"displayStyle":"button","customColors":{"brandColor":"65758e","conversationColor":"4B5DFF","actionColor":"4B5DFF"}},
-    clearMessagesTimeout: 3
-  });
-
 function viewResults(flag) {
     flag == true ?
         document.getElementById('resultContainer').style.opacity = '100%' :
@@ -83,4 +73,5 @@ function compareFlags(){
     return OGFLAGS.split('').map((d,i) => NFLAGS.split('')[i] != d && data.split(",")[i]).filter(x => x).
     map((d,i) => document.getElementById('textShow').innerHTML += `<li id="${i}">${d.replace(/_/g, ' ')}</li>`);
 }
+
 
